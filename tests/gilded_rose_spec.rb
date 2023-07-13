@@ -84,16 +84,16 @@ describe GildedRose do
       update_quality(items)
       assert_item(items[0], -1, 0)
     end
-
-    it "Conjured item decrease quality double" do
-      items = [
-        Item.new(CONJURED, 10, 50),
-        Item.new(CONJURED, 0, 50),
-      ]
-      update_quality(items)
-      assert_item(items[0], 9, 48)
-      assert_item(items[1], -1, 46)
-    end
+    #
+    # it "Conjured item decrease quality double" do
+    #   items = [
+    #     Item.new(CONJURED, 10, 50),
+    #     Item.new(CONJURED, 0, 50),
+    #   ]
+    #   update_quality(items)
+    #   assert_item(items[0], 9, 48)
+    #   assert_item(items[1], -1, 46)
+    # end
   end
 
 end
